@@ -1,6 +1,7 @@
 package github.PixelRupi.WDaLUR;
 
 import github.PixelRupi.WDaLUR.init.BlockInit;
+import github.PixelRupi.WDaLUR.init.CreativeTabInit;
 import github.PixelRupi.WDaLUR.init.ItemInit;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
@@ -15,5 +16,6 @@ public class WDaLUR {
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
         ItemInit.ITEMS.register(bus);
         BlockInit.BLOCKS.register(bus);
+        CreativeTabInit.TABS.register(bus);
     }
 }

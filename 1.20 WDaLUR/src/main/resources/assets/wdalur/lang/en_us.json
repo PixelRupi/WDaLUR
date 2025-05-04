@@ -1,5 +1,6 @@
 {
   "item.wdalur.example_item": "Test Item",
   "item.wdalur.fuel_rod_test": "Yummy Fuel Rod",
-  "block.wdalur.example_block": "Kilka gierek"
+  "block.wdalur.example_block": "Kilka gierek",
+  "itemGroup.WDaLUR_tab": "We Do a Little Uranium Refining"
 }
