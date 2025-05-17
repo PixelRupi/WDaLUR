@@ -1,5 +1,6 @@
-package github.PixelRupi.WDaLUR.init.Tiers;
+package github.PixelRupi.WDaLUR.init;
 
+import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraftforge.common.ForgeTier;
 
 public class TierInit {
@@ -9,5 +10,7 @@ public class TierInit {
             1.5f, // attack speed
             1.2f, // attack bonus
             14, //enchantowalnosc
+            TagInit.NEEDS_GIERKONIUM_TOOL,
+            () -> Ingredient.of(ItemInit.EXAMPLE_ITEM::get) // przedmiot do naprawiania w kowadle
     );
 }

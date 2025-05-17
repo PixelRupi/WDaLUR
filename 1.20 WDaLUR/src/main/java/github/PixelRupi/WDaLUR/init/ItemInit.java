@@ -4,9 +4,7 @@ import github.PixelRupi.WDaLUR.WDaLUR;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
-import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Rarity;
+import net.minecraft.world.item.*;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
@@ -43,5 +41,89 @@ public class ItemInit {
                     new Item.Properties()
                             .rarity(Rarity.UNCOMMON)
             )));
+    // // // // // // // // //
+    // Narzedzia z Gierkonium
+    // // // // // // // // //
+    public static final  RegistryObject<SwordItem> GIERKONIUM_SWORD = CreativeTabInit.addToTab(ITEMS.register("gierkonium_sword",
+            () -> new SwordItem(
+                    TierInit.GIERKONIUM,
+                    7,
+                    2.5f,
+                    new Item.Properties()
+            )));
+
+    public static final  RegistryObject<PickaxeItem> GIERKONIUM_PICKAXE = CreativeTabInit.addToTab(ITEMS.register("gierkonium_pickaxe",
+            () -> new PickaxeItem(
+                    TierInit.GIERKONIUM,
+                    7,
+                    2.5f,
+                    new Item.Properties()
+            )));
+
+    public static final  RegistryObject<ShovelItem> GIERKONIUM_SHOVEL = CreativeTabInit.addToTab(ITEMS.register("gierkonium_shovel",
+            () -> new ShovelItem(
+                    TierInit.GIERKONIUM,
+                    7,
+                    2.5f,
+                    new Item.Properties()
+            )));
+
+    public static final  RegistryObject<AxeItem> GIERKONIUM_AXE = CreativeTabInit.addToTab(ITEMS.register("gierkonium_axe",
+            () -> new AxeItem(
+                    TierInit.GIERKONIUM,
+                    7,
+                    2.5f,
+                    new Item.Properties()
+            )));
+
+    public static final  RegistryObject<HoeItem> GIERKONIUM_HOE = CreativeTabInit.addToTab(ITEMS.register("gierkonium_hoe",
+            () -> new HoeItem(
+                    TierInit.GIERKONIUM,
+                    7,
+                    2.5f,
+                    new Item.Properties()
+            )));
+
+
+    // // // // // // // // //
+    // Zbroja  z Gierkonium
+    // // // // // // // // //
+    public static final RegistryObject<ArmorItem> GIERKONIUM_HELMET = CreativeTabInit.addToTab(ITEMS.register("gierkonium_helmet",
+            () -> new ArmorItem(
+            ArmorMaterialInit.GIERKONIUM,
+                    ArmorItem.Type.HELMET,
+                    new Item.Properties()
+            )));
+
+    public static final RegistryObject<ArmorItem> GIERKONIUM_CHESTPLATE = CreativeTabInit.addToTab(ITEMS.register("gierkonium_chestplate",
+            () -> new ArmorItem(
+                    ArmorMaterialInit.GIERKONIUM,
+                    ArmorItem.Type.CHESTPLATE,
+                    new Item.Properties()
+            )));
+
+    public static final RegistryObject<ArmorItem> GIERKONIUM_LEGGINGS = CreativeTabInit.addToTab(ITEMS.register("gierkonium_leggings",
+            () -> new ArmorItem(
+                    ArmorMaterialInit.GIERKONIUM,
+                    ArmorItem.Type.LEGGINGS,
+                    new Item.Properties()
+            )));
+
+    public static final RegistryObject<ArmorItem> GIERKONIUM_BOOTS = CreativeTabInit.addToTab(ITEMS.register("gierkonium_boots",
+            () -> new ArmorItem(
+                    ArmorMaterialInit.GIERKONIUM,
+                    ArmorItem.Type.BOOTS,
+                    new Item.Properties()
+            )));
+
+
+    /*
+    >>>>> zostawcie dla potomnych
+
+    public static final RegistryObject<Item> TUTAJ_NAZWA = CreativeTabInit.addToTab(ITEMS.register("tutaj_nazwa",
+            () -> new Item(new Item.Properties()
+                // wlasciwosci
+            )));
+     */
 }
 
