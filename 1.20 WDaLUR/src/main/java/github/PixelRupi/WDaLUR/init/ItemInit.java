@@ -6,7 +6,6 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.Rarity;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -26,7 +25,7 @@ public class ItemInit {
                     .rarity(Rarity.EPIC)
             ));
 
-    public static final RegistryObject<Item> FUEL_ROD_TEST = ITEMS.register("fuel_rod_test",
+    public static final RegistryObject<Item> FUEL_ROD_TEST = CreativeTabInit.addToTab(ITEMS.register("fuel_rod_test",
             () -> new Item(new Item.Properties()
                     .stacksTo(32)
                     .food(new FoodProperties.Builder()
@@ -37,11 +36,12 @@ public class ItemInit {
                             .effect(() -> new MobEffectInstance(MobEffects.HUNGER, 60, 10), 1.0f)
                             .build())
                     .rarity(Rarity.COMMON)
-            ));
+            )));
 
-    public static final RegistryObject<Item> EXAMPLE_BLOCK_ITEM = ITEMS.register("example_block",
+    public static final RegistryObject<Item> EXAMPLE_BLOCK_ITEM = CreativeTabInit.addToTab(ITEMS.register("example_block",
             () -> new BlockItem(BlockInit.EXAMPLE_BLOCK.get(),
                     new Item.Properties()
                             .rarity(Rarity.UNCOMMON)
-            ));
+            )));
 }
+
