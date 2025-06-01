@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/handheld",
   "textures": {
-    "layer0": "wdalur:item/gierkonium_leggings"
+    "layer0": "wdalur:item/gierkonium_axe"
   }
 }

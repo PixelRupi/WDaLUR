@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/handheld",
   "textures": {
-    "layer0": "wdalur:item/gierkonium_pickaxe"
+    "layer0": "wdalur:item/gierkonium_sword"
   }
 }
