@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "E E",
+    "E E",
+    "   "
+  ],
+  "key": {
+    "E": {
+      "item": "wdalur:uranium_ingot"
+    }
+  },
+  "result": {
+    "item": "wdalur:uranium_boots"
+  }
+}
