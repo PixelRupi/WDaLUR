@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 50,
+  "experience": 3,
+  "group": "iron_ingot",
+  "ingredient": {
+    "item": "wdalur:raw_uranium"
+  },
+  "result": "wdalur:uranium_ingot"
+}
